@@ -1,7 +1,36 @@
+import React from "react";
+
+// function App() {
+//   return (<h1>Hello, World!</h1>
+//   );
+// }
 
 function App() {
-  return (<div> <p> Hello, World! </p> </div>
+  return (
+    <React.Fragment>
+      <label htmlFor="bar">bar</label>
+      <input type="text" onClick={() => { console.log("I am clicked") }} />
+    </React.Fragment>
   );
 }
+
+// function App() {
+//   const greeting = "Hi,Tom";
+//   const dom = <h1 className="foo">{greeting}</h1>;
+//   return dom;
+// }
+
+// function App() {
+//   const dom = <h1>Hi!</h1>
+//   return dom;
+// }
+
+// function App() {
+//   return React.createElement(
+//     "div",
+//     "null",
+//     "Hello,world!!"
+//   );
+// }
 
 export default App;
